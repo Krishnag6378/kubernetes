@@ -7,14 +7,14 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - host: app-krishna.com   # change this to your domain
+    - host: app-krishna.com   
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: django-app-service   # must match your Service
+                name: django-app-service  
                 port:
-                  number: 80               # must match Service port
+                  number: 80               
 
